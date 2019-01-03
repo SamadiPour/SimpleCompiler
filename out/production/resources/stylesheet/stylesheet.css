@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Kalos Sans';
+    src: url("/fonts/Kalos.ttf");
+}
+@font-face {
+    font-family: 'FiraCode';
+    src: url("/fonts/FiraCode-Medium.ttf");
+}
+
+.text-area {
+    -fx-font-family: 'FiraCode';
+    -fx-font-size: 18;
+}
+
+.custom-font {
+    -fx-font-family: 'Kalos Sans';
+    -fx-font-weight: bold;
+    -fx-font-size: 35;
+}
+
+.custom-font-button {
+    -fx-font-family: 'Kalos Sans';
+    -fx-font-size: 25;
+}
+
+.custom-font-header {
+    -fx-font-family: 'Kalos Sans';
+    -fx-font-weight: bold;
+    -fx-font-size: 27;
+}
+
+.custom-font-result {
+    -fx-font-family: 'Kalos Sans';
+    -fx-font-size: 22;
+}
+
+.parent {
+    -fx-background-color: transparent;
+}
+
+.pane {
+    -fx-background-color: #333333;
+}
+
+.trans-btn-white-border {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: whitesmoke;
+}
+
+.white-pane {
+    -fx-background-color: #FFFFFF;
+}
+
+.tf_box {
+    -fx-background-color: transparent;
+    -fx-border-color: #DEDEE4;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+
+.tf {
+    -fx-background-color: transparent;
+}
+
+.pink-btn {
+    -fx-background-color: #F78C7B;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.backImage {
+    -fx-background-image: url("../images/back.png");
+    /*-fx-background-color:transparent;*/
+}
+.text-area:focused{
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: rgba(247, 140, 123, 0.9); /* here rgba (corrected) */
+}

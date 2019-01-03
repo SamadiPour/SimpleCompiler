@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="slackPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.SamadiPour.SimpleCompiler.Controller.TextEnteringController">
+   <children>
+      <VBox stylesheets="@../stylesheet/stylesheet.css">
+         <children>
+            <VBox id="VBox" fx:id="Pane" alignment="CENTER_LEFT" prefHeight="480.0" prefWidth="480.0" stylesheets="@../stylesheet/stylesheet.css">
+               <children>
+                  <Label fx:id="upText" styleClass="custom-font" text="Enter your text here" textFill="#dd6757">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="320.0" prefWidth="450.0" styleClass="tf_box">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextArea fx:id="textInput" styleClass="text-area" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="285.0" prefHeight="45.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <JFXButton fx:id="submitButton" buttonType="RAISED" onMouseClicked="#click" prefHeight="39.0" prefWidth="120.0" ripplerFill="WHITE" text="Submit">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="pink-btn" />
+                              <String fx:value="custom-font-button" />
+                           </styleClass>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <styleClass>
+            <String fx:value="white-pane" />
+            <String fx:value="backImage" />
+         </styleClass>
+      </VBox>
+   </children>
+</StackPane>
