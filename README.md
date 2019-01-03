@@ -1,5 +1,5 @@
 # SimpleCompiler
-JAVAFX SimpleCompiler Project
+JavaFX SimpleCompiler Project
 
 
 ![Alt Text](https://i.ibb.co/GvypqtG/screenshot.png)
